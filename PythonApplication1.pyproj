@@ -1,0 +1,95 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3191a1f7-f5ff-471f-a992-825483e7295a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>lesson24_step8.py</StartupFile>
+    <SearchPath>C:\chromedriver</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="get_method.py" />
+    <Compile Include="IM_1.py" />
+    <Compile Include="lesson21_step4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson21_step6.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson22_step2_3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson22_step6.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson23_step4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson23_step6.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson24_step8.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson6_step12.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson6_step13.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson6_step4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson6_step5.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson6_step6.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lesson6_step7.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PythonApplication1.py" />
+    <Compile Include="stepik_unique_selectors.py" />
+    <Compile Include="test2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lesson22_step8.py">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.8</Version>
+      <Description>env (Python 3.8 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
